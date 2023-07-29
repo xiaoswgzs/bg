@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>CodeChat</title>
-    </head>
-  <body>	
-<script>
-window.location.href='http://ser516374512842.yzweb.top/';
-</script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        function loop() {
+        var i, n, s = '';
+
+        for (i = 0; i < 10; i++) {
+            n = Math.floor(Math.sin((Date.now()/200) + (i/2)) * 4) + 4;
+
+            s += String.fromCharCode(0x2581 + n);
+        }
+
+        window.location.hash = s;
+
+        setTimeout(loop, 50);
+    }
+
+    loop();
+        </script>
+ <body></body>
 
 
-  </body>
 </html>
